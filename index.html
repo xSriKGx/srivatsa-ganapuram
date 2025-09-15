@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Srivatsa Ganapuram — Portfolio</title>
+  <meta name="description" content="Personal website with homepage, about, resume, projects, contact, and a built-in site assistant." />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" href="data:," />
+</head>
+<body>
+  <a href="#home" class="sr-only">Skip to content</a>
+
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand"><span class="dot" aria-hidden="true"></span> <span>Srivatsa Ganapuram</span></div>
+        <div class="nav-links" role="navigation" aria-label="Primary">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#resume">Resume</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="right-tools">
+          <button id="themeBtn" class="btn" aria-label="Toggle theme">🌓</button>
+          <a href="assets/docs/Ganapuram_Srivatsa_Resume.pdf" class="btn primary" download="Ganapuram_Srivatsa_Resume.pdf" type="application/pdf" aria-label="Download résumé PDF" 
+        >Download résumé</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- Hero -->
+    <section class="hero container">
+      <div class="hero-wrap">
+        <div class="intro card" aria-labelledby="hero-title">
+          <p class="kicker">Hello 👋 I’m <strong>Srivatsa</strong></p>
+          <h1 id="hero-title">Studying Computer Science to solve real problems. </h1>
+          <p class="lead">I enjoy algorithms, full-stack tinkering, and teaching. Explore my résumé, projects, and ways to connect below. The floating assistant can answer questions and guide you around the site.</p>
+          <div class="cta">
+            <a class="btn" href="#resume">View Résumé</a>
+          </div>
+        </div>
+        <div class="stats card" aria-label="Quick stats">
+          <div class="stat">
+            <div>
+              <h3>Python • Java</h3>
+              <p>Languages I use most</p>
+            </div>
+            <span class="badge">Learning: C++</span>
+          </div>
+          <div class="stat">
+            <div>
+              <h3>Community</h3>
+              <p>Mentor & Workshop lead</p>
+            </div>
+            <span class="badge">Let's collaborate</span>
+          </div>
+          <div class="stat">
+            <div>
+              <h3>More soon!</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section container">
+      <h2>About Me</h2>
+      <div class="about-wrap">
+        <div class="avatar card">
+            <img src="assets/img/me.jpeg" alt="Portrait of Srivatsa Ganapuram" class="avatar-img">
+        </div>  
+        <div class="card pad">
+          <p>I'm <strong>Srivatsa Ganapuram</strong>, a freshman studying Computer Science at the University of Massachusetts Amherst. I love learning by building—whether that’s a small data tool, a game, or a helpful website. Beyond coding, I enjoy teaching others and creating resources for my community.</p>
+          <p>My interests include <em>AI, cybersecurity, and human-centered design</em>. I'm currently exploring how to intersect the fields of computer science, AI, and economics.</p>
+          <div class="suggestions" aria-label="Highlights">
+            <span class="chip">🏫 CS @ UMass Amherst</span>
+            <span class="chip">🤖 AI & Robotics</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume" class="section container">
+      <h2>Résumé</h2>
+      <p class="sub">Education, experience, and core skills. (Use the "Download Résumé" button to export.)</p>
+      <div class="resume-grid">
+        <div class="resume-card card">
+          <h3>Education</h3>
+          <ul class="resume-list">
+            <li><strong>Chantilly High School</strong> — 2021–2025
+              <br/>Relevant Coursework: AP Calculus BC, AP Physics C - Mechanics, AP Physics 1, AP CS A, Data Structures and Algorithms
+              <br/>Relevant Clubs: Robotics (FRC), CyberPatriot
+            </li>
+          </ul>
+        </div>
+        <div class="resume-card card">
+          <h3>Experience</h3>
+          <ul class="resume-list">
+            <li><strong>Information Security Intern</strong> — Intelsat (Jun. 2025 - Aug. 2025)
+              <br/>Pentested commerical satelite communication devices and created phishing campaigns
+            </li>
+          </ul>
+        </div>
+        <div class="resume-card card">
+          <h3>Skills</h3>
+          <p class="muted">Languages & Tools</p>
+          <div>
+            <span class="badge">Python</span>
+            <span class="badge">Java</span>
+            <span class="badge">HTML/CSS</span>
+            <span class="badge">IBM QRadar</span>
+            <span class="badge">Linux</span>
+          </div>
+        </div>
+        <div class="resume-card card">
+          <h3>Achievements</h3>
+          <ul class="resume-list">
+            <li>Robotics programming — autonomous routines & sensor integration.</li>
+            <li>Pentesting - Using Linux on a Raspberry Pi</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section container">
+        <h2>Contact</h2>
+        <p class="sub">Reach out for collaboration, questions, or opportunities.</p>
+        <div class="card pad">
+            <form class="form" id="contactForm" action="https://formspree.io/f/mzzaqkpa" method="POST">
+            <!-- Honeypot to reduce spam -->
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+      <!-- Your fields (names matter for the email) -->
+            <input id="name"  name="name"  type="text"  placeholder="Your name"  aria-label="Your name"  required />
+            <input id="email" name="_replyto" type="email" placeholder="Your email" aria-label="Your email" required />
+            <textarea id="msg"  name="message" placeholder="Your message" aria-label="Your message" required></textarea>
+
+      <!-- Optional metadata -->
+            <input type="hidden" name="_subject" value="New message from your portfolio">
+            <input type="hidden" name="_template" value="table">
+
+            <button class="btn primary" type="submit">Send Message</button>
+            <div id="formStatus" class="muted" style="margin-top:8px"></div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+  <footer class="container">
+    <div class="grid-2">
+      <div>© <span id="year"></span> Srivatsa Ganapuram. All rights reserved.</div>
+      <div style="text-align:right">Made with HTML, CSS & a tiny JS chatbot ✨</div>
+    </div>
+  </footer>
+
+  <!-- Chatbot Floating Button -->
+  <div class="chat-toggle">
+    <button id="chatBtn" class="btn primary" aria-haspopup="dialog" aria-controls="chatPanel">💬 Ask the Site</button>
+  </div>
+
+  <!-- Chatbot Panel -->
+  <div id="chatPanel" class="chat-panel card" role="dialog" aria-modal="false" aria-labelledby="chatTitle">
+    <div class="chat-header">
+      <div>
+        <strong id="chatTitle">Site Assistant</strong>
+        <div class="muted" style="font-size:.85rem">Ask about résumé, projects, contact, skills…</div>
+      </div>
+      <div>
+        <button id="closeChat" class="btn" aria-label="Close chat">✖</button>
+      </div>
+    </div>
+    <div id="chatBody" class="chat-body" tabindex="0" aria-live="polite"></div>
+    <div class="chat-input">
+      <input id="chatInput" type="text" placeholder="e.g., show python projects or where is your resume" aria-label="Message" />
+      <button id="sendBtn" class="btn primary" aria-label="Send">Send</button>
+    </div>
+  </div>
+
+  <script src="assets/script.js" defer></script>
+</body>
+</html>
